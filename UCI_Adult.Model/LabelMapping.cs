@@ -10,7 +10,7 @@ namespace UCI_Adult.Model
     [CustomMappingFactoryAttribute(nameof(LabelMapping))]
     public class LabelMapping : CustomMappingFactory<LabelMappingInput, LabelMappingOutput>
     {
-        // Custom mapping from score to label which can be used in both training and loading
+        // Custom mapping to determine the label with the highest probability
         public static void Mapping(LabelMappingInput input, LabelMappingOutput output)
         {
             output.Prediction = input.label.GetValues().ToArray().First() == 1;
