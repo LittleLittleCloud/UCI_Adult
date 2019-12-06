@@ -32,7 +32,7 @@ namespace UCI_Adult.ConsoleApp
             // Notice that this pipeline is not trainable, because it only contains transformers
             IEstimator<ITransformer> pipeline = BuildPipeline(mlContext);
 
-            // Create MLNet model from pipeline
+            // Create ML.NET model from pipeline
             ITransformer mlModel = pipeline.Fit(inputDataView);
 
             // Save model
