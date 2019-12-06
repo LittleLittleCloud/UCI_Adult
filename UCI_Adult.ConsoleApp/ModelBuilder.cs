@@ -18,7 +18,7 @@ namespace UCI_Adult.ConsoleAp
         // Set a random seed for repeatable/deterministic results across multiple trainings.
         private static MLContext mlContext = new MLContext(seed: 1);
         
-         // Training in Azure produces an ONNX model; this method demonstrates creating an ML.NET model (MLModel.zip) from the ONNX model (bestModel.zip), which you can then use with the ConsumeModel() method to make predictions
+         // Training in Azure produces an ONNX model; this method demonstrates creating an ML.NET model (MLModel.zip) from the ONNX model (bestModel.onnx), which you can then use with the ConsumeModel() method to make predictions
         public static void CreateMLNetModelFromOnnx()
         {
             // Load data
