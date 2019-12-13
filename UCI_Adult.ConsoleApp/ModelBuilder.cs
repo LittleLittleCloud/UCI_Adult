@@ -6,7 +6,7 @@ using System.Linq;
 using Microsoft.ML;
 using Microsoft.ML.Data;
 using UCI_Adult.Model;
-namespace UCI_Adult.ConsoleAp
+namespace UCI_Adult.ConsoleApp
 {
     public static class ModelBuilder
     {
